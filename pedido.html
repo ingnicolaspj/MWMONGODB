@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>PDG-API</title>
+    <style>
+        body{
+            padding: 20px;
+            background: url(https://images.pexels.com/photos/4068701/pexels-photo-4068701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            color: white;
+        }
+        h1{
+            text-align-last: center;
+        }
+        th, td{
+            color: white;
+            background-color: rgba(0,0,0,.8);
+        }
+    </style>
+</head>
+<body>
+   <br>
+    <h1>Tienda de videojuegos</h1>
+    <br>
+    <button id="get-button" class="btn btn-success">Mostrar Productos</button>
+    <hr>
+    <form id="create-form">
+        <label for="">Nombre del producto: </label>
+        <input type="text" id="create-input"><br>
+        <label for="">Precios del priducto: </label>
+        <input type="text" id="create-input_"><br>
+        <label for="">Cantidad: </label>
+        <input type="text" id="create-input__">
+        <button class="btn btn-success">Crear</button>
+    </form>
+    <hr>
+    <table class="table">
+        <thead class="thead-inverse">
+            <tr>
+                <th scope="col">#</th>
+                <th  scope="col">Nombre</th>
+                <th  scope="col">Precio</th>
+                <th  scope="col">Cantidad</th>
+                <th scope="col">Sub Total</th>
+                <th  scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+            <tfoot class="thead-inverse">
+               <tr>
+                   <th>Total</th>
+                   <th id="total">$</th>
+               </tr>
+            </tfoot>
+    </table>
+    
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
